@@ -1,0 +1,111 @@
+.menu {
+  width: var(--ancho-menu);
+  background: var(--color-menu-fondo);
+  border-right: var(--grosor-borde) solid var(--color-borde);
+  padding: var(--esp-32) var(--esp-16);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-8);
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding-left: var(--esp-32);
+  border-radius: var(--radio-md);
+  transition: background var(--transicion);
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.menu-item--activo,
+.menu-item--activo:hover {
+  background: var(--color-naranja);
+}
+
+.menu-acento {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 48px;
+  background: var(--color-naranja);
+  border-radius: 2px;
+}
+
+.menu-icono {
+  width: 24px;
+  height: 24px;
+  margin-right: var(--esp-16);
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Iconos de trazo (PNG oscuro sobre transparente): se muestran en blanco
+   sobre el menú oscuro y en tinta cuando el item está activo. */
+.menu-icono--trazo {
+  filter: brightness(0) invert(1);
+  transition: filter var(--transicion);
+}
+
+.menu-item--activo .menu-icono--trazo {
+  filter: brightness(0);
+}
+
+/* Icono de imagen (avatar de usuario): se redondea y conserva sus colores. */
+.menu-icono--imagen {
+  border-radius: var(--radio-sm);
+}
+
+.menu-item .txt-menu {
+  color: var(--color-gris-menu);
+}
+
+.menu-item--activo .txt-menu-activo {
+  color: var(--color-tinta);
+}
+
+.menu-pie {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-16);
+}
+
+.menu-dispositivo {
+  background: var(--color-blanco);
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-md);
+  padding: var(--esp-12);
+}
+
+.menu-dispositivo-titulo {
+  display: block;
+  color: var(--color-gris-texto);
+}
+
+.menu-dispositivo-detalle {
+  display: block;
+  color: var(--color-gris-medio);
+  padding-top: var(--esp-4);
+}
+
+.menu-logout {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.menu-logout .txt-cuerpo {
+  color: var(--color-gris-menu);
+}

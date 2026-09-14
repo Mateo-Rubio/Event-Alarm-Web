@@ -1,0 +1,6 @@
+.tarjeta {
+  background: var(--color-blanco);
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-md);
+  padding: var(--esp-24);
+}

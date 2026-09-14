@@ -1,0 +1,20 @@
+.pagehead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 60px;
+}
+
+.pagehead-texto h1 {
+  color: var(--color-tinta);
+}
+
+.pagehead-subtitulo {
+  color: var(--color-gris-texto);
+  padding-top: var(--esp-4);
+}
+
+.pagehead-derecha {
+  display: flex;
+  align-items: center;
+}

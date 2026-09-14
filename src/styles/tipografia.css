@@ -1,0 +1,179 @@
+/* Estilos de texto extraídos 1:1 de Figma */
+
+/* style_7a16a126 — cifras KPI grandes */
+.txt-kpi-cifra {
+  font-family: Archivo, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+}
+
+/* Heading 1 (páginas) */
+.txt-h1 {
+  font-family: Archivo, sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+/* style_7d1b7b51 — Heading 2 (títulos de tarjeta) */
+.txt-h2 {
+  font-family: Archivo, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+/* style_d17ed0ba — marca / nombre 18 medium */
+.txt-marca {
+  font-family: Manrope, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* style_7e4ceeb1 — item menú 16 regular */
+.txt-menu {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* item menú activo 16 semibold */
+.txt-menu-activo {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* style_7c5b5483 — cuerpo 14 regular */
+.txt-cuerpo {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* style_a1acb9ac — 14 medium centrado */
+.txt-14-medium {
+  font-family: Manrope, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* style_ba63f21c — 14 regular centrado */
+.txt-14-center {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* style_00747507 — 12 regular */
+.txt-12 {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* style_e4282c14 — etiqueta 11 medium mayúsculas */
+.txt-etiqueta {
+  font-family: Manrope, sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* style_84bc9cf2 — cabecera tabla 12 medium mayúsculas */
+.txt-cabecera-tabla {
+  font-family: Manrope, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* style_e48610ee — celda tabla 13 regular */
+.txt-13 {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* style_2ada4b7b — celda tabla 13 medium */
+.txt-13-medium {
+  font-family: Manrope, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* style_9d5441d1 — eje 11 regular */
+.txt-eje {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+/* style_ddd5ec4b — eje 11 regular centrado */
+.txt-eje-center {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+}
+
+/* style_9874603b — botón Roboto 14 regular */
+.txt-boton-roboto {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* botón Roboto 14 medium (Guardar cambios) */
+.txt-boton-roboto-medium {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* style_dda757a3 — 14 regular alineado a la derecha */
+.txt-14-right {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+}
+
+/* iniciales avatar barra superior */
+.txt-avatar-sm {
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* iniciales avatar grande perfil */
+.txt-avatar-lg {
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+}

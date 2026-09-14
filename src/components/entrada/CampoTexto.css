@@ -1,0 +1,47 @@
+.campo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 var(--esp-12);
+  background: var(--color-blanco);
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-sm);
+  transition: border-color var(--transicion), box-shadow var(--transicion);
+}
+
+.campo:hover:not(.campo--deshabilitado) {
+  border-color: var(--color-naranja);
+}
+
+.campo:focus-within:not(.campo--deshabilitado) {
+  border-color: var(--color-naranja);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+.campo--deshabilitado {
+  border-color: var(--color-borde-suave);
+  opacity: 0.6;
+}
+
+.campo-etiqueta {
+  position: absolute;
+  top: -6.88px;
+  left: 9.12px;
+  padding: 0 var(--esp-4);
+  background: var(--color-blanco);
+  color: var(--color-gris-texto);
+}
+
+.campo-valor {
+  color: var(--color-tinta);
+}
+
+.campo-icono {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-sm);
+  flex-shrink: 0;
+}

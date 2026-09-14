@@ -1,0 +1,48 @@
+/* Tokens extraídos del Design System de Figma (frames 192:1449, 192:2052, 192:2298) */
+:root {
+  /* Colores */
+  --color-naranja: #ff6b35;        /* fill_b6829bcb — acento / activo */
+  --color-borde: #e2e7ed;          /* fill_ea1c911e — bordes y separadores */
+  --color-blanco: #ffffff;         /* fill_658ab2fa */
+  --color-tinta: #0e1822;          /* fill_1ff53dc1 — texto primario */
+  --color-gris-texto: #22323f;     /* fill_d6db4d92 — texto secundario */
+  --color-gris-medio: #545454;     /* fill_9751c1d0 */
+  --color-gris-menu: #b7c4ce;      /* fill_15f2a964 — texto menú lateral */
+  --color-negro-avatar: #070e15;   /* fill_a7bdb0c5 — iniciales avatar */
+  --color-fondo-panel: #f5f7fa;    /* fondo del contenedor principal */
+  --color-menu-fondo: #16232f;     /* fondo del menú lateral */
+  --color-verde: #3ed9a4;          /* fill_503854ab — cumplida / caminar */
+  --color-amarillo: #ffc24b;       /* fill_758f002e — pospuesta / hablar */
+  --color-rojo: #f2495c;           /* fill_f86a75bd — no sonó / eliminar */
+  --color-morado: #9b7cff;         /* fill_b8942401 — pospuestas / deslizar */
+  --color-rosa: #f27bb0;           /* escanear QR */
+  --color-borde-suave: #e2e2e2;    /* fill_b744384b */
+  --color-borde-tabla: #1f1f1f;    /* borde de fila resaltada */
+  --color-cabecera-tabla: #f0f0f0; /* fondo cabecera tabla */
+  --color-kpi-gris: #7a8b99;       /* etiqueta KPI variante */
+  --color-transparente: rgba(255, 255, 255, 0);
+
+  /* Radios */
+  --radio-sm: 4px;
+  --radio-md: 8px;
+  --radio-pill: 20px;
+  --radio-avatar: 32px;
+
+  /* Bordes */
+  --grosor-borde: 1.11667px;
+
+  /* Espaciado */
+  --esp-4: 4px;
+  --esp-8: 8px;
+  --esp-12: 12px;
+  --esp-16: 16px;
+  --esp-24: 24px;
+  --esp-32: 32px;
+
+  /* Layout */
+  --ancho-menu: 256px;
+  --alto-topbar: 64px;
+
+  /* Transiciones (style_tile.md — microinteracciones) */
+  --transicion: 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}

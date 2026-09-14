@@ -1,0 +1,270 @@
+.perfil {
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-grid {
+  display: grid;
+  grid-template-columns: 734.53fr 351.27fr;
+  gap: var(--esp-32);
+  padding-top: var(--esp-24);
+  align-items: start;
+}
+
+.perfil-col-principal,
+.perfil-col-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-24);
+}
+
+.perfil-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-card h2 {
+  color: var(--color-tinta);
+}
+
+/* Filas de campos */
+.perfil-campos-fila {
+  display: flex;
+  gap: var(--esp-24);
+  padding-top: var(--esp-24);
+}
+
+.campo-flex {
+  flex: 1;
+}
+
+.perfil-nota {
+  color: var(--color-gris-texto);
+  padding-top: var(--esp-12);
+}
+
+.perfil-nota-simple {
+  color: var(--color-gris-texto);
+  padding-top: var(--esp-4);
+}
+
+.perfil-acciones {
+  padding-top: var(--esp-24);
+}
+
+/* Botones */
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--esp-8);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: var(--radio-pill);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background var(--transicion), border-color var(--transicion),
+    box-shadow var(--transicion);
+}
+
+.boton--primario {
+  background: var(--color-naranja);
+  min-width: 176px;
+}
+
+.boton--primario .txt-boton-roboto-medium {
+  color: var(--color-blanco);
+}
+
+.boton--primario:hover {
+  background: #e85f2d;
+}
+
+.boton--outline {
+  border: var(--grosor-borde) solid var(--color-borde);
+}
+
+.boton--outline .txt-boton-roboto {
+  color: var(--color-gris-medio);
+}
+
+.boton--outline:hover {
+  border-color: var(--color-naranja);
+  background: rgba(255, 107, 53, 0.05);
+}
+
+.boton--outline-oscuro {
+  border: var(--grosor-borde) solid var(--color-borde-tabla);
+}
+
+.boton--outline-oscuro:hover {
+  background: rgba(242, 73, 92, 0.05);
+}
+
+.boton--ancho200 {
+  width: 200px;
+}
+
+.boton--ancho-full {
+  width: 100%;
+}
+
+.perfil-eliminar-texto {
+  color: var(--color-rojo);
+}
+
+/* Preferencias */
+.perfil-preferencias {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-24);
+  padding-top: var(--esp-24);
+}
+
+/* Select */
+.select-envoltura {
+  position: relative;
+}
+
+.select-etiqueta {
+  position: absolute;
+  top: -6.88px;
+  left: 9.12px;
+  padding: 0 var(--esp-4);
+  background: var(--color-blanco);
+  color: var(--color-gris-texto);
+  z-index: 1;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  padding: 0 var(--esp-12);
+  background: var(--color-blanco);
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-sm);
+  cursor: pointer;
+  transition: border-color var(--transicion), box-shadow var(--transicion);
+}
+
+.select:hover,
+.select[aria-expanded='true'] {
+  border-color: var(--color-naranja);
+}
+
+.select-valor {
+  color: var(--color-tinta);
+}
+
+.select-chevron {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  flex-shrink: 0;
+  border-right: 2px solid var(--color-gris-texto);
+  border-bottom: 2px solid var(--color-gris-texto);
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform var(--transicion);
+}
+
+.select-chevron--abierto {
+  transform: rotate(-135deg) translate(-2px, -2px);
+}
+
+.select-lista {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  right: 0;
+  list-style: none;
+  background: var(--color-blanco);
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-sm);
+  box-shadow: 0 8px 24px rgba(14, 24, 34, 0.12);
+  z-index: 5;
+  overflow: hidden;
+}
+
+.select-opcion {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: var(--esp-12);
+  background: transparent;
+  border: none;
+  color: var(--color-tinta);
+  cursor: pointer;
+  transition: background var(--transicion);
+}
+
+.select-opcion:hover {
+  background: var(--color-fondo-panel);
+}
+
+/* Tarjeta de cuenta (avatar) */
+.perfil-card-cuenta {
+  align-items: flex-start;
+}
+
+.perfil-avatar {
+  width: 64px;
+  height: 64px;
+  background: var(--color-naranja);
+  border-radius: var(--radio-avatar);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil-avatar span {
+  color: var(--color-negro-avatar);
+}
+
+.perfil-avatar-nombre {
+  color: var(--color-tinta);
+  padding-top: var(--esp-16);
+}
+
+.perfil-avatar-detalle {
+  color: var(--color-gris-texto);
+  padding-top: var(--esp-8);
+}
+
+.perfil-card-cuenta .perfil-avatar-detalle + .perfil-avatar-detalle {
+  padding-top: var(--esp-12);
+}
+
+/* Dispositivo */
+.perfil-dispositivo-nombre {
+  color: var(--color-tinta);
+  padding-top: var(--esp-16);
+}
+
+/* Eliminar cuenta */
+.perfil-card-eliminar {
+  position: relative;
+  border-color: var(--color-rojo);
+  padding-left: 28px;
+  overflow: hidden;
+}
+
+.perfil-acento-eliminar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--color-naranja);
+  border-radius: 8px 0 0 8px;
+}
+
+.perfil-eliminar-titulo {
+  color: var(--color-rojo);
+}
+
+.perfil-card-eliminar .perfil-nota {
+  width: 298px;
+}

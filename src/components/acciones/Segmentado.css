@@ -1,0 +1,37 @@
+.segmentado {
+  display: flex;
+  height: 40px;
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-pill);
+  overflow: hidden;
+  background: transparent;
+}
+
+.segmentado-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--esp-16);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transicion), color var(--transicion);
+}
+
+.segmentado-btn--divisor {
+  border-left: var(--grosor-borde) solid var(--color-borde);
+}
+
+.segmentado-btn .txt-14-center,
+.segmentado-btn .txt-14-medium {
+  color: var(--color-gris-texto);
+}
+
+.segmentado-btn--activo {
+  background: var(--color-blanco);
+}
+
+.segmentado-btn--activo .txt-14-medium {
+  color: var(--color-tinta);
+}

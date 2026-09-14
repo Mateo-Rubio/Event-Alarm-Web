@@ -1,0 +1,175 @@
+.tendencias {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card de líneas */
+.tendencias-lineas-card {
+  width: 100%;
+  height: 351.35px;
+  margin-top: var(--esp-24);
+  display: flex;
+  flex-direction: column;
+}
+
+.tendencias-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tendencias-cabecera-nota {
+  color: var(--color-gris-texto);
+}
+
+.tendencias-lienzo {
+  position: relative;
+  padding-top: var(--esp-16);
+  width: 100%;
+}
+
+.tendencias-lineas-img {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.tendencias-eje {
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--esp-8);
+  margin-top: var(--esp-8);
+  border-top: var(--grosor-borde) solid var(--color-borde);
+}
+
+.tendencias-eje .txt-eje {
+  color: var(--color-gris-texto);
+}
+
+/* Hotspots superpuestos a la gráfica */
+.tendencias-hotspots {
+  position: absolute;
+  top: var(--esp-16);
+  left: 0;
+  height: 231px;
+  width: 100%;
+}
+
+.hotspot {
+  position: absolute;
+  top: 0;
+  height: 231px;
+  cursor: pointer;
+}
+
+.hotspot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 194, 75, 0.08);
+  opacity: 0;
+  transition: opacity var(--transicion);
+}
+
+.hotspot:hover::before {
+  opacity: 1;
+}
+
+/* Fila inferior: barras verticales + barras horizontales */
+.tendencias-fila {
+  display: grid;
+  grid-template-columns: 638.72fr 447.08fr;
+  gap: var(--esp-32);
+  padding-top: var(--esp-32);
+  align-items: start;
+}
+
+.tendencias-barras-card {
+  height: 286.23px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.tendencias-barras-lienzo {
+  padding-top: var(--esp-16);
+  width: 100%;
+}
+
+.barras {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--esp-12);
+  height: 160px;
+}
+
+.barra-col {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+  height: 160px;
+}
+
+.barra {
+  width: 48px;
+  background: var(--color-amarillo);
+}
+
+.barras-eje {
+  display: flex;
+  gap: var(--esp-12);
+  padding-top: var(--esp-8);
+  margin-top: var(--esp-8);
+  border-top: var(--grosor-borde) solid var(--color-borde);
+}
+
+.barras-eje-item {
+  flex: 1;
+  color: var(--color-gris-texto);
+}
+
+/* Barras horizontales */
+.tendencias-hbars-card {
+  height: 286.23px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.hbars {
+  padding-top: var(--esp-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-8);
+  width: 100%;
+}
+
+.hbar {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-12);
+  height: 32px;
+}
+
+.hbar-etiqueta {
+  width: 120px;
+  flex-shrink: 0;
+  color: var(--color-tinta);
+}
+
+.hbar-pista {
+  flex: 1;
+  height: 16px;
+}
+
+.hbar-relleno {
+  height: 16px;
+}
+
+.hbar-valor {
+  width: 24px;
+  flex-shrink: 0;
+  color: var(--color-tinta);
+}

@@ -1,0 +1,32 @@
+.historial {
+  display: flex;
+  flex-direction: column;
+}
+
+.historial-wip {
+  margin-top: var(--esp-24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--esp-8);
+  min-height: 360px;
+}
+
+.historial-wip-insignia {
+  color: var(--color-naranja);
+  background: rgba(255, 107, 53, 0.1);
+  padding: var(--esp-4) var(--esp-12);
+  border-radius: var(--radio-pill);
+}
+
+.historial-wip-titulo {
+  color: var(--color-tinta);
+  margin-top: var(--esp-8);
+}
+
+.historial-wip-texto {
+  color: var(--color-gris-texto);
+  max-width: 360px;
+}

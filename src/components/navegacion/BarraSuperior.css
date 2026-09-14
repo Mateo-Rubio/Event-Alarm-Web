@@ -1,0 +1,71 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  height: var(--alto-topbar);
+  background: var(--color-blanco);
+  border-bottom: var(--grosor-borde) solid var(--color-borde);
+}
+
+.topbar-marca {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-12);
+  padding-left: var(--esp-24);
+  height: 32px;
+}
+
+.topbar-logo {
+  width: 32px;
+  height: 32px;
+  background: var(--color-naranja);
+  border-radius: var(--radio-md);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar-logo-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  /* La campana es de trazo oscuro; se muestra en blanco sobre el logo naranja. */
+  filter: brightness(0) invert(1);
+}
+
+.topbar-titulo {
+  color: var(--color-tinta);
+}
+
+.topbar-derecha {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-24);
+  margin-left: auto;
+  padding-right: var(--esp-24);
+  height: 32px;
+}
+
+.topbar-sync {
+  color: var(--color-gris-texto);
+}
+
+.topbar-usuario {
+  color: var(--color-tinta);
+}
+
+.topbar-avatar {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: var(--color-naranja);
+  border-radius: var(--radio-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.topbar-avatar span {
+  color: var(--color-negro-avatar);
+}
