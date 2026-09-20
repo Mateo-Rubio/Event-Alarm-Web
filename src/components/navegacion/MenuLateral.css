@@ -104,8 +104,19 @@
   display: flex;
   align-items: center;
   height: 40px;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
 }
 
 .menu-logout .txt-cuerpo {
   color: var(--color-gris-menu);
+  transition: color var(--transicion);
+}
+
+.menu-logout:hover .txt-cuerpo {
+  color: var(--color-blanco);
 }

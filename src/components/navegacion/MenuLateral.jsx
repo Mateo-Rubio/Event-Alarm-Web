@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import iconoResumen from '../../icons/resumen_icon.png'
 import iconoHistorial from '../../icons/historial_icon.png'
 import iconoTendencias from '../../icons/tendencias_icon.png'
@@ -13,6 +13,8 @@ const items = [
 ]
 
 export default function MenuLateral() {
+  const navigate = useNavigate()
+
   return (
     <nav className="menu">
       <div className="menu-items">
@@ -51,9 +53,13 @@ export default function MenuLateral() {
             Android · Última carga hoy 7:02 a. m.
           </span>
         </div>
-        <div className="menu-logout">
+        <button
+          type="button"
+          className="menu-logout"
+          onClick={() => navigate('/acceso')}
+        >
           <span className="txt-cuerpo">Cerrar sesión</span>
-        </div>
+        </button>
       </div>
     </nav>
   )

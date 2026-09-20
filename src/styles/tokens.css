@@ -23,19 +23,33 @@
   --color-transparente: rgba(255, 255, 255, 0);
 
   /* Radios */
+  --radio-xs: 2px;                 /* acento activo menú lateral */
   --radio-sm: 4px;
+  --radio-6: 6px;                  /* checkbox overlays */
   --radio-md: 8px;
+  --radio-10: 10px;                /* chips de fecha */
+  --radio-12: 12px;                /* botones overlay */
+  --radio-14: 14px;                /* botón cerrar overlay */
+  --radio-16: 16px;                /* contenedor overlay */
+  --radio-18: 18px;                /* día seleccionado calendario */
   --radio-pill: 20px;
   --radio-avatar: 32px;
 
+  /* Colores adicionales overlays */
+  --color-dia-suave: #ffece3;      /* día del rango en calendario */
+  --sombra-overlay: 0px 12px 32px 0px rgba(0, 0, 0, 0.18);
+
   /* Bordes */
   --grosor-borde: 1.11667px;
+  --grosor-borde-checkbox: 1.5px;  /* checkbox overlays */
+  --grosor-borde-1: 1px;           /* botones overlay */
 
   /* Espaciado */
   --esp-4: 4px;
   --esp-8: 8px;
   --esp-12: 12px;
   --esp-16: 16px;
+  --esp-20: 20px;
   --esp-24: 24px;
   --esp-32: 32px;
 

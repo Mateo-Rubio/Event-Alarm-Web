@@ -177,3 +177,71 @@
   font-size: 24px;
   line-height: 16px;
 }
+
+
+/* ── Estilos de texto de los overlays de filtro ── */
+
+/* style Archivo 18 semibold — título de overlay */
+.txt-overlay-titulo {
+  font-family: Archivo, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Archivo 16 semibold — flechas de navegación de mes / × cerrar */
+.txt-overlay-nav {
+  font-family: Archivo, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Manrope 16 semibold — × cerrar (overlays de checkbox) */
+.txt-overlay-cerrar {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* style_a9cc01fa — Manrope 14 medium (fila de opción) */
+.txt-14-medium-left {
+  font-family: Manrope, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* style_65090a85 / style_36ac678a — Manrope 14 semibold */
+.txt-14-semibold {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Manrope 13 semibold — marca de checkbox / día seleccionado */
+.txt-13-semibold {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* Manrope 13 regular centrado — día del calendario */
+.txt-13-center {
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* style_4ccb2f92 / style_f33e208a — Manrope 11 semibold (labels DESDE/HASTA, días) */
+.txt-11-semibold {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+}
