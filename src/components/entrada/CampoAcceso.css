@@ -1,0 +1,41 @@
+/* Campo con etiqueta flotante — frames 192:1277 / 192:1322 */
+.campo-acceso {
+  position: relative;
+  display: block;
+  width: 397.77px;
+}
+
+.campo-acceso-caja {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 12px;
+  background: var(--color-blanco);
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-sm);
+}
+
+.campo-acceso-valor {
+  color: var(--color-tinta);
+  flex: 1;
+}
+
+/* Caja 20x20 del ícono de ojo (contraseña) */
+.campo-acceso-icono {
+  width: 20px;
+  height: 20px;
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-sm);
+  flex-shrink: 0;
+}
+
+/* Etiqueta flotante en el borde superior — x:9.12 y:-6.88 */
+.campo-acceso-etiqueta {
+  position: absolute;
+  top: -6.88px;
+  left: 9.12px;
+  padding: 0 4px;
+  background: var(--color-blanco);
+  color: var(--color-gris-texto);
+  white-space: nowrap;
+}

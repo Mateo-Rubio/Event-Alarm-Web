@@ -1,0 +1,166 @@
+/* Pantalla de Acceso — frames 192:1252 (login) / 192:1297 (registro) */
+
+/* Login: frame padding 24px, contenido centrado, fondo #F5F7FA */
+.acceso {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: var(--color-fondo-panel);
+}
+
+/* Container 480px que agrupa la tarjeta + la nota legal */
+.acceso-tarjeta-wrap {
+  width: 480px;
+}
+
+/* Tarjeta: padding 40px, blanco, borde, radio 8 */
+.acceso-tarjeta {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background: var(--color-blanco);
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-md);
+}
+
+/* Logo 32x32 naranja radio 8, centrado */
+.acceso-logo-fila {
+  display: flex;
+  justify-content: center;
+  height: 32px;
+}
+
+.acceso-logo {
+  width: 32px;
+  height: 32px;
+  background: var(--color-naranja);
+  border-radius: var(--radio-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acceso-logo-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  /* La campana es de trazo oscuro; se muestra en blanco sobre el logo naranja. */
+  filter: brightness(0) invert(1);
+}
+
+/* Heading 1 — padding top 24, centrado */
+.acceso-heading {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.acceso-heading-texto {
+  text-align: center;
+  color: var(--color-tinta);
+}
+
+/* Párrafo — padding top 8, ancho 398, centrado */
+.acceso-parrafo {
+  width: 398px;
+  padding-top: 8px;
+  color: var(--color-gris-texto);
+}
+
+/* Segmentado — padding top 24 */
+.acceso-segmentado-wrap {
+  padding-top: 24px;
+}
+
+.acceso-segmentado {
+  display: flex;
+  width: 397.77px;
+  height: 40px;
+  border: var(--grosor-borde) solid var(--color-borde);
+  border-radius: var(--radio-pill);
+  overflow: hidden;
+}
+
+.acceso-seg-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transicion), color var(--transicion);
+}
+
+.acceso-seg-btn--divisor {
+  border-left: var(--grosor-borde) solid var(--color-borde);
+}
+
+.acceso-seg-btn .txt-14-center,
+.acceso-seg-btn .txt-14-medium {
+  color: var(--color-gris-texto);
+}
+
+.acceso-seg-btn--activo {
+  background: var(--color-blanco);
+}
+
+.acceso-seg-btn--activo .txt-14-medium {
+  color: var(--color-tinta);
+}
+
+/* Campos — padding top 24, gap 20 */
+.acceso-campos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  gap: 20px;
+}
+
+/* Botón — padding top 20 */
+.acceso-boton-wrap {
+  padding-top: 20px;
+}
+
+.acceso-boton {
+  width: 397.77px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  background: var(--color-naranja);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: var(--radio-pill);
+  cursor: pointer;
+  transition: filter var(--transicion);
+}
+
+.acceso-boton:hover {
+  filter: brightness(0.95);
+}
+
+.acceso-boton:active {
+  filter: brightness(0.9);
+}
+
+/* Nota legal — padding 24 40 0, centrada, ancho 480 con padding lateral 40 */
+.acceso-nota-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 24px 40px 0;
+}
+
+.acceso-nota {
+  width: 398px;
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--color-kpi-gris);
+}
